@@ -1,0 +1,92 @@
+// HOLEXA Real-World Example
+// Demonstrates: functions, loops, strings, math, control flow
+// Run: hlxc run real_world.hlx
+
+// --- Math utilities ---
+fn abs(x: int) -> int {
+    if x < 0 { return 0 - x }
+    return x
+}
+
+fn max(a: int, b: int) -> int {
+    if a > b { return a }
+    return b
+}
+
+fn min(a: int, b: int) -> int {
+    if a < b { return a }
+    return b
+}
+
+fn is_prime(n: int) -> bool {
+    if n < 2 { return false }
+    if n == 2 { return true }
+    let mut i = 2
+    while i * i <= n {
+        if n % i == 0 { return false }
+        i = i + 1
+    }
+    return true
+}
+
+fn factorial(n: int) -> int {
+    if n <= 1 { return 1 }
+    return n * factorial(n - 1)
+}
+
+// --- Main program ---
+println("=== HOLEXA Real World Demo ===")
+println("")
+
+// Primes up to 50
+println("Primes up to 50:")
+let mut prime_str = ""
+for i in 2..=50 {
+    if is_prime(i) {
+        prime_str = prime_str + to_string(i) + " "
+    }
+}
+println(prime_str)
+
+// Factorials
+println("")
+println("Factorials:")
+for i in 1..=10 {
+    println(to_string(i) + "! = " + to_string(factorial(i)))
+}
+
+// FizzBuzz
+println("")
+println("FizzBuzz (1-20):")
+for i in 1..=20 {
+    if i % 15 == 0 {
+        println("FizzBuzz")
+    } else if i % 3 == 0 {
+        println("Fizz")
+    } else if i % 5 == 0 {
+        println("Buzz")
+    } else {
+        println(i)
+    }
+}
+
+// Statistics
+println("")
+println("Statistics (1..=10):")
+let mut total = 0
+let mut count = 0
+let mut maximum = 0
+let mut minimum = 999
+for i in 1..=10 {
+    total = total + i
+    count = count + 1
+    maximum = max(maximum, i)
+    minimum = min(minimum, i)
+}
+println("Sum:     " + to_string(total))
+println("Count:   " + to_string(count))
+println("Max:     " + to_string(maximum))
+println("Min:     " + to_string(minimum))
+
+println("")
+println("=== Demo Complete ===")

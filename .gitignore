@@ -1,0 +1,23 @@
+# Compiler build artifacts
+compiler/build/
+compiler/hlxc
+
+# Generated C files
+*.hlx.c
+
+# Compiled binaries (no extension on Linux/Mac)
+*.out
+*.exe
+
+# Editor files
+.vscode/settings.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+/tmp/
+
+# Package cache
+.hlxpm/cache/

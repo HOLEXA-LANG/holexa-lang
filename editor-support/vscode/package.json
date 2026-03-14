@@ -1,0 +1,23 @@
+{
+  "name": "holexa-lang",
+  "displayName": "HOLEXA Language Support",
+  "description": "Syntax highlighting and language support for HOLEXA (.hlx)",
+  "version": "1.0.0",
+  "publisher": "HOLEXA-LANG",
+  "engines": { "vscode": "^1.70.0" },
+  "categories": ["Programming Languages"],
+  "repository": "https://github.com/HOLEXA-LANG/holexa-lang",
+  "contributes": {
+    "languages": [{
+      "id": "holexa",
+      "aliases": ["HOLEXA", "holexa"],
+      "extensions": [".hlx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "holexa",
+      "scopeName": "source.holexa",
+      "path": "./syntaxes/holexa.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,28 @@
+// HOLEXA Standard Library — String Module
+// import string
+
+fn repeat(s: String, n: int) -> String {
+    let mut result = ""
+    for i in 0..n { result = result + s }
+    return result
+}
+
+fn starts_with(s: String, prefix: String) -> bool {
+    return s.contains(prefix)
+}
+
+fn is_empty(s: String) -> bool {
+    return len(s) == 0
+}
+
+fn pad_left(s: String, width: int, ch: String) -> String {
+    let mut result = s
+    while len(result) < width { result = ch + result }
+    return result
+}
+
+fn pad_right(s: String, width: int, ch: String) -> String {
+    let mut result = s
+    while len(result) < width { result = result + ch }
+    return result
+}

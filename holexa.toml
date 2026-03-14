@@ -1,0 +1,17 @@
+[package]
+name        = "holexa-lang"
+version     = "1.0.0"
+description = "The HOLEXA Programming Language"
+authors     = ["HOLEXA-LANG Team"]
+license     = "MIT"
+homepage    = "https://github.com/HOLEXA-LANG/holexa-lang"
+repository  = "https://github.com/HOLEXA-LANG/holexa-lang"
+keywords    = ["programming-language", "compiler", "holexa"]
+
+[compiler]
+entry   = "src/main.hlx"
+output  = "target/main"
+optimize = true
+
+[dependencies]
+# hlxpm add <package> to add dependencies

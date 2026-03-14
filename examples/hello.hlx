@@ -1,0 +1,10 @@
+// HOLEXA Hello World
+// Run: hlxc run hello.hlx
+
+fn main() {
+    let name = "World"
+    println("Hello, " + name + "!")
+    println("Welcome to HOLEXA v1.0.0")
+}
+
+main()

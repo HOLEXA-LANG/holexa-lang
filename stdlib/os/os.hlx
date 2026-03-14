@@ -1,0 +1,7 @@
+// HOLEXA Standard Library — OS Module
+// import os
+
+// Platform detection constants
+const LINUX   = 1
+const MACOS   = 2
+const WINDOWS = 3

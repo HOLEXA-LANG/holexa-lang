@@ -1,0 +1,14 @@
+// Fibonacci sequence in HOLEXA
+// Run: hlxc run fibonacci.hlx
+
+fn fibonacci(n: int) -> int {
+    if n <= 1 {
+        return n
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+println("Fibonacci sequence:")
+for i in 0..15 {
+    println(fibonacci(i))
+}

@@ -1,0 +1,22 @@
+// Structs in HOLEXA
+// Run: hlxc run structs.hlx
+
+struct Point {
+    x: int,
+    y: int,
+}
+
+struct Person {
+    name: String,
+    age: int,
+}
+
+// Use structs
+let p = Point { x: 10, y: 20 }
+println("Point x=" + to_string(p.x) + " y=" + to_string(p.y))
+
+fn distance_from_origin(px: int, py: int) -> int {
+    return px * px + py * py
+}
+
+println("Distance^2 = " + to_string(distance_from_origin(p.x, p.y)))

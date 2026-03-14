@@ -1,0 +1,40 @@
+// Loop examples in HOLEXA
+// Run: hlxc run loops.hlx
+
+// For loop (range)
+println("For loop 0..5:")
+for i in 0..5 {
+    println(i)
+}
+
+// For loop inclusive
+println("For loop 1..=5:")
+for i in 1..=5 {
+    println(i)
+}
+
+// While loop
+println("While loop:")
+let mut x = 10
+while x > 0 {
+    x = x - 3
+}
+println(x)
+
+// Loop with break
+println("Loop with break at 5:")
+let mut counter = 0
+loop {
+    counter = counter + 1
+    if counter >= 5 {
+        break
+    }
+}
+println(counter)
+
+// Sum using for loop
+let mut sum = 0
+for i in 1..=100 {
+    sum = sum + i
+}
+println("Sum 1..100 = " + to_string(sum))

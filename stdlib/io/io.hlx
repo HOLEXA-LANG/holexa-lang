@@ -1,0 +1,10 @@
+// HOLEXA Standard Library — IO Module
+// import io
+
+fn read_line() -> String {
+    return input("")
+}
+
+fn prompt(msg: String) -> String {
+    return input(msg)
+}

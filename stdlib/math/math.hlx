@@ -1,0 +1,46 @@
+// HOLEXA Standard Library — Math Module
+// import math
+
+fn abs(x: int) -> int {
+    if x < 0 { return 0 - x }
+    return x
+}
+
+fn max(a: int, b: int) -> int {
+    if a > b { return a }
+    return b
+}
+
+fn min(a: int, b: int) -> int {
+    if a < b { return a }
+    return b
+}
+
+fn pow(base: int, exp: int) -> int {
+    let mut result = 1
+    for i in 0..exp { result = result * base }
+    return result
+}
+
+fn is_even(n: int) -> bool {
+    return n % 2 == 0
+}
+
+fn is_odd(n: int) -> bool {
+    return n % 2 != 0
+}
+
+fn clamp(val: int, lo: int, hi: int) -> int {
+    if val < lo { return lo }
+    if val > hi { return hi }
+    return val
+}
+
+fn gcd(a: int, b: int) -> int {
+    while b != 0 {
+        let tmp = b
+        b = a % b
+        a = tmp
+    }
+    return a
+}

@@ -1,0 +1,23 @@
+// Simple calculator in HOLEXA
+// Run: hlxc run calculator.hlx
+
+fn add(a: int, b: int) -> int { return a + b }
+fn sub(a: int, b: int) -> int { return a - b }
+fn mul(a: int, b: int) -> int { return a * b }
+fn div(a: int, b: int) -> int {
+    if b == 0 {
+        println("Error: Division by zero!")
+        return 0
+    }
+    return a / b
+}
+
+let a = 100
+let b = 42
+
+println("Calculator Demo")
+println("a = 100, b = 42")
+println("a + b = " + to_string(add(a, b)))
+println("a - b = " + to_string(sub(a, b)))
+println("a * b = " + to_string(mul(a, b)))
+println("a / b = " + to_string(div(a, b)))

@@ -1,0 +1,18 @@
+// String operations in HOLEXA
+// Run: hlxc run strings.hlx
+
+let greeting = "Hello"
+let name = "HOLEXA"
+let message = greeting + ", " + name + "!"
+
+println(message)
+println(len(message))
+println(message.to_upper())
+println(message.to_lower())
+
+// String building
+let mut result = ""
+for i in 0..5 {
+    result = result + to_string(i) + " "
+}
+println(result)
